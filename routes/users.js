@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const plm = require("passport-local-mongoose");
-mongoose.connect("https://pinterest-1-backend.onrender.com");
+mongoose.connect("mongodb://127.0.0.1:27017/pinterest");
 
 const userSchema = mongoose.Schema({
   username: String,
